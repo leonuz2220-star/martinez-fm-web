@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111114">
+  <meta name="description" content="Martínez FM, la radio del momento. Música, entretenimiento y buena compañía estés donde estés.">
+  <title>Martínez FM | La radio del momento</title>
+  <style>
+    :root { --bg:#101014; --panel:#19191f; --red:#f0444b; --white:#f7f7fa; --muted:#b7b7c2; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--white); background:var(--bg); line-height:1.6; }
+    a { color:inherit; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:18px clamp(18px,5vw,70px); border-bottom:1px solid #292930; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:900; letter-spacing:1px; }
+    .logo { display:grid; place-items:center; width:44px; height:44px; border-radius:12px; background:var(--red); color:white; font-size:20px; }
+    .brand small { display:block; color:var(--muted); font-size:10px; letter-spacing:3px; }
+    nav { display:flex; flex-wrap:wrap; gap:20px; font-size:14px; }
+    nav a { text-decoration:none; color:#dedee5; }
+    nav a:hover { color:var(--red); }
+    .hero { min-height:520px; display:grid; place-items:center; text-align:center; padding:70px 20px 64px; background:radial-gradient(ellipse at 50% 10%,#3a171d 0%,#191319 35%,#101014 72%); }
+    .eyebrow { display:inline-block; border:1px solid #743039; color:#ff858a; padding:6px 13px; border-radius:999px; font-size:12px; letter-spacing:2px; text-transform:uppercase; }
+    h1 { margin:18px 0 0; font-size:clamp(42px,8vw,88px); line-height:1.02; letter-spacing:-2px; }
+    h1 span { color:var(--red); }
+    .slogan { margin:14px 0 0; font-size:clamp(17px,2.5vw,23px); font-weight:bold; letter-spacing:3px; }
+    .intro { max-width:620px; margin:18px auto 28px; color:var(--muted); }
+    .actions { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; gap:9px; padding:13px 20px; border-radius:9px; font-weight:bold; text-decoration:none; border:1px solid #484851; }
+    .button.primary { background:var(--red); border-color:var(--red); color:#fff; }
+    .button:hover { transform:translateY(-1px); }
+    main { width:min(1080px,92%); margin:0 auto; }
+    section { padding:58px 0; }
+    .section-title { margin:0 0 10px; font-size:clamp(26px,4vw,38px); }
+    .section-sub { color:var(--muted); margin:0 0 24px; }
+    .player-card { background:linear-gradient(135deg,#202027,#17171d); border:1px solid #303039; border-radius:18px; padding:clamp(22px,4vw,36px); display:grid; grid-template-columns:1fr; gap:18px; }
+    .live { color:#ff858a; font-size:12px; font-weight:bold; letter-spacing:2px; }
+    .player-card h3 { margin:5px 0; font-size:25px; }
+    .player-card p { color:var(--muted); margin:0; }
+    audio { width:100%; margin-top:8px; }
+    .note { font-size:12px; color:#a8a8b4; }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+    .card { background:var(--panel); border:1px solid #2b2b33; border-radius:14px; padding:22px; }
+    .card .emoji { font-size:27px; }
+    .card h3 { margin:10px 0 5px; }
+    .card p { margin:0; color:var(--muted); font-size:14px; }
+    .community { text-align:center; background:#19191f; border:1px solid #2b2b33; border-radius:18px; padding:34px 20px; }
+    .socials { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin-top:20px; }
+    footer { text-align:center; border-top:1px solid #292930; color:#9999a5; padding:25px 16px; font-size:13px; }
+    @media (max-width:680px) { .topbar { align-items:flex-start; flex-direction:column; } nav { gap:14px; } .cards { grid-template-columns:1fr; } .hero { min-height:470px; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><div class="logo" aria-hidden="true">♫</div><div>MARTÍNEZ FM<small>LA RADIO DEL MOMENTO</small></div></div>
+    <nav aria-label="Navegación principal">
+      <a href="#escuchar">Escuchar</a><a href="#nosotros">Nosotros</a><a href="#comunidad">Comunidad</a>
+    </nav>
+  </header>
+
+  <header class="hero">
+    <div>
+      <span class="eyebrow">● Radio online</span>
+      <h1>MARTÍNEZ <span>FM</span></h1>
+      <p class="slogan">LA RADIO DEL MOMENTO</p>
+      <p class="intro">Música, entretenimiento y buena compañía, estés donde estés. Conectate y formá parte de nuestra familia.</p>
+      <div class="actions">
+        <a class="button primary" href="#escuchar">▶ Escuchanos en vivo</a>
+        <a class="button" href="#comunidad">Sumate a la comunidad</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="escuchar">
+      <h2 class="section-title">Escuchanos en vivo</h2>
+      <p class="section-sub">Dale al play y disfrutá de Martínez FM desde tu móvil o computadora.</p>
+      <div class="player-card">
+        <div>
+          <span class="live">● TRANSMISIÓN ONLINE</span>
+          <h3>Estás escuchando Martínez FM</h3>
+          <p>La radio que te acompaña todos los días.</p>
+        </div>
+        <audio controls preload="none">
+          <source src="http://78.129.241.110:21476/stream" type="audio/mpeg">
+          Tu navegador no admite el reproductor de audio.
+        </audio>
+        <div class="note">Si el reproductor no inicia, probá el acceso a la radio actual: <a href="https://martinezfm.radio12345.com/" target="_blank" rel="noopener">abrir Martínez FM en Listen2MyRadio</a>. La dirección directa del audio puede necesitar actualización o configuración HTTPS al publicar la web.</div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h2 class="section-title">Somos radio, somos familia</h2>
+      <p class="section-sub">Una familia de locutores y oyentes que se reúne para compartir música, buena onda y momentos inolvidables.</p>
+      <div class="cards">
+        <article class="card"><div class="emoji">🎙️</div><h3>Programas</h3><p>Voces, historias y compañía durante tus días.</p></article>
+        <article class="card"><div class="emoji">🎵</div><h3>Música</h3><p>Ritmo y entretenimiento para acompañarte donde estés.</p></article>
+        <article class="card"><div class="emoji">📻</div><h3>En cualquier lugar</h3><p>Escuchanos desde tu computadora, tablet o celular.</p></article>
+      </div>
+    </section>
+
+    <section id="comunidad">
+      <div class="community">
+        <h2 class="section-title">Sumate a nuestra familia</h2>
+        <p class="section-sub">Seguinos y compartí Martínez FM con tus amigos.</p>
+        <div class="socials">
+          <!-- Reemplazar los enlaces de ejemplo por las redes oficiales cuando estén confirmadas. -->
+          <a class="button" href="https://martinezfm.radio12345.com/" target="_blank" rel="noopener">🌐 Nuestra radio</a>
+          <a class="button" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a class="button" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+          <a class="button" href="https://www.whatsapp.com/" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <p class="note" style="margin-top:18px">Los botones de redes sociales son provisionales; después pondremos los enlaces oficiales de Martínez FM.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Martínez FM · La radio del momento</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
